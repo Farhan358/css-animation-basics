@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Function</title>
+    <style type="text/css">
+        p{
+            background-color: wheat;
+            margin: auto;
+            width: 80%;
+            line-height: 1.5;
+            padding: 15px;
+            border-radius: 5px ;
+        }
+
+        img{
+            width: 300px;
+            display: block;
+            margin: auto;
+            margin-top: 200px;
+            transition: transform 2s;
+        }
+        img:hover{
+            transform: rotate(90deg); 
+        }
+    </style>
+    
+</head>
+<body>
+    <img src="../assets/products/product1.png" alt="">
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p>
+        <code> transfom : rotate(X)</code> <br>
+        
+        rotate function rotate the property clockwise or anti-clockwise based on the value of X. If X is positive rotation will be clockwise. Else anti-clockwise.
+        <br>
+        We can use 3 unit as value of X.
+        <br>
+        deg -> <code> transfom : rotate(90deg);</code> or <code> transfom : rotate(-90);</code>
+        <br>
+        turn -> 1 turn = 360deg <br> 
+        <code> transfom : rotate(1turn);</code> or <code> transfom : rotate(-1turn);</code>
+        <br>   
+        gradient -> 400 grad = 1 turn <br> <code> transfom : rotate(200grad);</code> or <code> transfom : rotate(-200grad);</code>
+    </p>
+</body>
+</html>

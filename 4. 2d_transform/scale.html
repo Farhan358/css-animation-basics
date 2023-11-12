@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale Function</title>
+    <style type="text/css">
+        p{
+            background-color: wheat;
+            margin: auto;
+            width: 80%;
+            line-height: 1.5;
+            padding: 15px;
+            border-radius: 5px ;
+        }
+        
+        img{
+            width: 300px;
+            display: block;
+            margin: auto;
+            margin-top: 200px;
+            transition: transform 2s;
+        }
+        img:hover{
+            /* increace size along X-axis(width) */
+           /* transform: scaleX(1.5); */
+            /* decreace size along X-axis */
+           /* transform: scaleX(.5); */
+           /* increace size along Y-axis(height) */
+           /* transform: scaleY(1.5); */
+           /* decreace size along Y-axis(height) */
+           /* transform: scaleY(.5); */
+           /* increace width and height at the same time) */
+           /* transform: scale(1.5,1.5); */
+           /* transform: scale(1.5); */
+           /* decreace width and height at the same time) */
+           /* transform: scale(.5,.5); */
+           transform: scale(.5);
+
+        }
+    </style>
+    
+</head>
+<body>
+
+    <img src="../assets/products/product1.png" alt="">
+
+    <br>
+
+    <p>
+        Scale increase or decrease value based on the value x. if value of x<1, scale function decrease the size of the property. else x>1 incerese the size of property.
+        <br>
+        scale() -> increase/decrease width and height
+        <br>
+        scaleX() -> increase/decrease width
+        <br>   
+        scaleY() -> increase/decrease height
+    </p>
+</body>
+</html>
