@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Origin Example</title>
+    <style type="text/css">
+        .basics{
+            display: flex;
+            margin: 50px;
+        }
+        .card{
+
+            height: 200px;
+            width: 200px;
+            background-color: #27ae60;
+            font-size: 32px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 100px auto;
+            padding: 10px;
+        }
+
+        .top{
+            transition: transform 2s;
+            transform-origin: top;
+        }
+
+        .top:hover {
+            transform: rotate(90deg);
+        }
+
+        .bottom{
+            transition: transform 2s;
+            transform-origin: bottom;
+        }
+
+        .bottom:hover {
+            transform: rotate(90deg);
+        }
+
+        .right{
+            transition: transform 2s;
+            transform-origin: right;
+        }
+
+        .right:hover {
+            transform: rotate(90deg);
+        }
+
+        .left{
+            transition: transform 2s;
+            transform-origin: left;
+        }
+
+        .left:hover {
+            transform: rotate(90deg);
+        }
+        .top-right{
+            transition: transform 2s;
+            transform-origin: top right;
+        }
+
+        .top-right:hover {
+            transform: rotate(90deg);
+        }
+
+        .bottom-right{
+            transition: transform 2s;
+            transform-origin: bottom right;
+        }
+
+        .bottom-right:hover {
+            transform: rotate(90deg);
+        }
+
+        .top-left{
+            transition: transform 2s;
+            transform-origin: top left;
+        }
+
+        .top-left:hover {
+            transform: rotate(90deg);
+        }
+
+        .bottom-left{
+            transition: transform 2s;
+            transform-origin: bottom left;
+        }
+
+        .bottom-left:hover {
+            transform: rotate(90deg);
+        }
+
+        .center{
+            transition: transform 2s;
+            transform-origin: 50% 50%;
+        }
+
+        .center:hover {
+            transform: rotate(90deg);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="basics">
+            <div class="card top">TOP</div>
+            <div class="card bottom">BOTTOM</div>
+            <div class="card right">RIGHT</div>
+            <div class="card left">LEFT</div>
+        </div>
+
+        <div class="basics">
+            <div class="card top-right">TOP-RIGHT</div>
+            <div class="card top-left">TOP-LEFT</div>
+            <div class="card bottom-right">BOTTOM-RIGHT</div>
+            <div class="card bottom-left">BOTTOM-LEFT</div>
+        </div>
+
+        <div>
+            <div class="card center">ORIGIN-CENTER</div>
+        </div>
+
+        
+
+
+        
+    </div>
+</body>
+</html>
