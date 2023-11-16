@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 3d</title>
+    <style type="text/css">
+        body{
+            perspective: 1000px;
+        }
+        
+        .text-center{
+            text-align: center;
+        }
+
+        img{
+            display: block;
+            height: 300px;
+            width: 300px;
+            margin:auto;
+            margin-bottom: 200px;
+            
+        }
+        .translate{
+            transition: transform 2s;
+        }
+
+        .translate:hover{
+            transform: translateZ(-300px);
+        }
+
+        .rotateX{
+            transition: transform 2s;
+        }
+
+        .rotateX:hover{
+            transform: rotateX(60deg);
+        }
+        .rotateY{
+            transition: transform 2s;
+        }
+
+        .rotateY:hover{
+            transform: rotateY(60deg);
+        }
+        .rotateZ{
+            transition: transform 2s;
+        }
+
+        .rotateZ:hover{
+            transform: rotateZ(60deg);
+        }
+    </style>
+</head>
+<body>
+
+        <h1 class="text-center">Translate 3d</h1>
+        <img class="translate" src="../assets/products/product11.png" alt="">
+
+
+        <h1 class="text-center">Rotate 3d</h1>
+
+        <h2 class="text-center">RotateX()</h2>
+        <img class="rotateX" src="../assets/products/product11.png" alt="">
+
+        <h2 class="text-center">RotateY()</h2>
+        <img class="rotateY" src="../assets/products/product11.png" alt="">
+
+        <h2 class="text-center">RotateZ()</h2>
+        <img class="rotateZ" src="../assets/products/product11.png" alt="">
+
+</body>
+</html>

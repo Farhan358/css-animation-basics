@@ -12,7 +12,7 @@ a {
     box-shadow: 10px 5px 5px #70aa88;
 }
 
-button:active {
+a:active {
     box-shadow: none;
 }
 
