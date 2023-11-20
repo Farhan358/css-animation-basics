@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.common {
+    border: 2px solid tomato;
+    background: none;
+    color: tomato;
+    padding: 20px 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.common:hover {
+    color: #fff;
+}
+
+.common:before {
+    content: "";
+    position: absolute;
+    
+    height: 0%;
+    width: 100%;
+
+    background: tomato;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.top::before {
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    border-radius: 0 0 50% 50%;
+}
+
+.bottom:before {
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    border-radius: 50% 50% 0 0;
+
+}
+.left:before {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    border-radius:0  50% 50% 0;
+}
+
+.right:before {
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    border-radius:50% 0  0 50%;
+}
+
+.top:hover:before, .bottom:hover:before {
+    height: 190%;
+}
+.left:hover:before, .right:hover:before {
+    width:190%;
+}
